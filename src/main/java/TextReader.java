@@ -7,6 +7,9 @@ import java.net.HttpURLConnection;
  * Created by Rafal on 2016-09-01.
  */
 public class TextReader {
+    
+    // delete it... it should not be a member field!
+    // id should be a method scope variable...
     private String textLine;
 
     public String getStringData(HttpURLConnection connection) throws IOException {
