@@ -2,9 +2,15 @@
  * Created by Rafal on 2016-09-05.
  */
 public class InputValidator implements Validator {
+    
+    // dont get it what it is doing????
+    
     private String inputString;
 
     public InputValidator(String[] input) {
+        
+        // conditional processing in constructor is not good idea...
+        
         if(validateArrayInput(input) && validateProperString(input[0])){
             this.inputString = input[0];
         }
